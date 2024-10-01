@@ -29,9 +29,13 @@ const GlobalMetrics = () => {
           <p>loading</p>
         ) : (
           <ul>
-            <li>Total Raffles Created: {metrics.totalRafflesCreated}</li>
-            <li>Total Registered Users: {metrics.totalRegisteredUsers}</li>
-            <li>Total Tickets Purchased: {metrics.totalTicketsPurchased}</li>
+            <li>Total Raffles Created: {metrics.raffleCount}</li>
+            <li>
+              Total Registered Users: {metrics.metrics.totalRegisteredUsers}
+            </li>
+            <li>
+              Total Tickets Purchased: {metrics.metrics.totalTicketsPurchased}
+            </li>
           </ul>
         )}
       </div>
