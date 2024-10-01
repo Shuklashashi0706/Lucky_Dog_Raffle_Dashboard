@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-const GlobalMetrics = () => {
+const ActiveRaffles = () => {
   const [metrics, setMetrics] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -23,7 +23,9 @@ const GlobalMetrics = () => {
   }, []);
   return (
     <div className=" border border-black p-[20px] rounded-[10px]">
-      <h2 className=" text-[30px] text-black font-bold">Global Metrics</h2>
+      <h2 className=" text-[30px] text-black font-bold">
+        Total Number of Active Raffles
+      </h2>
       <div className=" font-medium">
         {loading ? (
           <p>loading</p>
@@ -39,4 +41,4 @@ const GlobalMetrics = () => {
   );
 };
 
-export default GlobalMetrics;
+export default ActiveRaffles;
