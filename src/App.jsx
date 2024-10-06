@@ -2,6 +2,7 @@ import ActiveRaffles from "./components/ActiveRaffles";
 import GlobalMetrics from "./components/GlobalMetrics";
 import CompletedRaffles from "./components/CompletedRaffles";
 import RevenueDistribution from "./components/RevenueDistribution";
+import RafflePool from "./components/RafflePool";
 function App() {
   return (
     <div className="">
@@ -11,8 +12,11 @@ function App() {
       <div className=" m-5 grid grid-cols-2 gap-5 mt-[50px] ">
         <GlobalMetrics />
         <ActiveRaffles />
-        <CompletedRaffles/>
-        <RevenueDistribution/>
+        <CompletedRaffles />
+        <RevenueDistribution />
+      </div>
+      <div className=" w-[60%] mx-auto ">
+        <RafflePool />
       </div>
     </div>
   );
